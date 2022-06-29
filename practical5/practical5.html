@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 5</title>
+    <link rel="stylesheet" href="./practical5.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>websiteName</h1>
+            <ul class="menu">
+                <li>LinkOne</li>
+                <li>LinkTwo</li>
+                <li>LinkThree</li>
+            </ul>
+            <div class="slideShowContainer">
+                <div class="mySlidesFade">
+                    <div class="numberText">1/3</div>
+                    <img src="./image.png" style="width: auto; height: auto;margin-left: 248px;">
+                    <div class="text">Caption Text</div>
+                </div>
+                <div class="mySlidesFade">
+                    <div class="numberText">2/3</div>
+                    <img src="./image.png" style="width: auto; height: auto;margin-left: 248px;">
+                    <div class="text">Caption Text</div>
+                </div>
+                <div class="mySlidesFade">
+                    <div class="numberText">3/3</div>
+                    <img src="./image.png" style="width: auto; height: auto;margin-left: 248px;">
+                    <div class="text">Caption Text</div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+        <div class="main">
+            <div class="col1">
+                <h1>Text</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque accusamus delectus vero corporis omnis quia in ex non reiciendis veritatis.</p>
+            </div>
+            <div class="col2">
+                <h1>Text</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque accusamus delectus vero corporis omnis quia in ex non reiciendis veritatis.</p>
+            </div>
+            <div class="col3">
+                <h1>Text</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque accusamus delectus vero corporis omnis quia in ex non reiciendis veritatis.</p>
+            </div>
+        </div>
+        <div class="footer">
+            <h1 id="copyrightText">&#169 Website Name</h1>
+        </div>
+    </div>
+    <script src="./practical5.js"></script>
+</body>
+</html>
