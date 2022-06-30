@@ -117,3 +117,16 @@
     margin-top: 40px;
     padding: 5px;
 }
+#button
+{
+    width: 60px;
+    padding: 4px;
+    color: white;
+    border-radius: 20px;
+}
+a:link
+{
+    background: transparent;
+    color: white;
+    text-decoration: none;
+}
