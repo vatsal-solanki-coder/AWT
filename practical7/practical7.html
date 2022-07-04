@@ -4,19 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practical 7</title>
     <link rel="stylesheet" href="./practical7.css">
+    <title>Form</title>
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <img id="img1" src="./form icon.png">
-            <h1 id="signInFormText">Sign In Form</h1>
+        <div class="r1">
+            <div class="r1c1">
+                <h1>Sign in form</h1>
+            </div>
         </div>
-        <div class="mainContainer">
-            <input type="text" id="firstName" placeholder="First Name">
+        <div class="r2">
+            <div class="r2c1">
+                <h3>Full Name</h3>
+            </div>
+            <div class="r2c2">
+                <input type="text" id="fn">
+            </div>
         </div>
-        <div class="footer"></div>
+        <div class="r3">
+            <div class="r3c1">
+                <h3>Email</h3>
+            </div>
+            <div class="r3c2">
+                <input type="email">
+            </div>
+        </div>
+        <div class="r4">
+            <div class="r4c1">
+                <h3>Password</h3>
+            </div>
+            <div class="r4c2">
+                <input type="password">
+            </div>
+        </div>
+        <div class="r5">
+            <div class="r5c1">
+                <h3>Retype Password</h3>
+            </div>
+            <div class="r5c2">
+                <input type="password">
+            </div>
+        </div>
+        <div class="r6">
+            <div class="r6c1">
+                <h3>Address</h3>
+            </div>
+            <div class="r6c2">
+                <textarea cols="30" rows="10"></textarea>
+            </div>
+        </div>
+        <div class="r7">
+            <div class="r7c1">
+                <h3>Phone number</h3>
+            </div>
+            <div class="r7c2">
+                <input type="tel">
+            </div>
+        </div>
+        <div class="r8">
+            <div class="r8c1">
+                <input type="button" value="send" id="btn" onclick="myfun()">
+            </div>
+        </div>
     </div>
+    <script src="./practical7.js"></script>
 </body>
 </html>

@@ -1,47 +1,50 @@
 *
 {
-    box-sizing: border-box;
     margin: 0;
-    padding-left: 1%;
-    padding-right: 1%;
+    padding: 5px;
+    box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body
 {
-    background: linear-gradient(to right, #de6262, #ffb88c);
+    background-color: crimson;
 }
 .container
 {
     width: 100%;
-    background-color: black;
-    opacity: .5;
+    background-color: burlywood;
+    opacity: .6;
+    padding: 5px;
+    border: 2px solid black;
 }
-.header
+.r1c1
 {
     width: 100%;
-    color: white;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    display: inline-block;
+    border: 2px solid teal;
+    text-align: center;
 }
-#img1
+.r2c1, .r3c1, .r4c1, .r5c1, .r6c1, .r7c1
 {
-    width: 6%;
-    height: 50%;
-    background-color: white;
+    display: inline-block;
+    margin-left: 41%;
 }
-#signInFormText
+.r2c2, .r3c2, .r4c2, .r5c2, .r6c2, .r7c2
 {
-    display: inline;
+    display: inline-block;
+    margin-right: -2px;
 }
-.mainContainer
+.r8c1
 {
-    padding-left: 12px;
-    background-color: #de6262;
-    opacity: .5;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
 }
-#firstName
+#btn
 {
-    padding-left: 12px;
+    width: 100px;
+    font-size: large;
+    font-weight: bolder;
+    color: black;
+    
 }
