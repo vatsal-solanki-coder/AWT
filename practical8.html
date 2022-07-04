@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 8</title>
+    <style>
+        .container
+        {
+            height: 200px;
+            width: 200px;
+            background-color: brown;
+            border: 2px solid black;
+            margin-top: 5px;
+            transition: 2s;
+        }
+        #box1:hover
+        {
+            transform: translate(100px,0);
+        }
+        #box2:hover
+        {
+            transform: rotate(45deg);
+        }
+        #box3:hover
+        {
+            transform: rotate3d(1,10,10,360deg);
+        }
+        #box4:hover
+        {
+            transform: scale(2);
+        }
+        #box5:hover
+        {
+            transform: skew(20deg);
+        }
+        #box6:hover
+        {
+            border-radius: 50%;
+            text-align: center;
+        }
+        #box7:hover
+        {
+            background-color: blue;
+            text-shadow: 2px 2px 2px white;
+        }
+        #box8:hover
+        {
+            opacity: .6;
+            transform: rotate3d(1,1,1,180deg);
+        }
+        #box9:hover
+        {
+            display: none;
+        }
+        #box10:hover
+        {
+            color: blanchedalmond;
+            transform: rotate(30deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="box1"><h1>box1</h1></div>
+    <div class="container" id="box2"><h1>box2</h1></div>
+    <div class="container" id="box3"><h1>box3</h1></div>
+    <div class="container" id="box4"><h1>box4</h1></div>
+    <div class="container" id="box5"><h1>box5</h1></div>
+    <div class="container" id="box6"><h1>box6</h1></div>
+    <div class="container" id="box7"><h1>box7</h1></div>
+    <div class="container" id="box8"><h1>box8</h1></div>
+    <div class="container" id="box9"><h1>box9</h1></div>
+    <div class="container" id="box10"><h1>box10</h1></div>
+</body>
+</html>
