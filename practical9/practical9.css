@@ -1,0 +1,97 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.header
+{
+    width: 100%;
+    height: 100px;
+    background-color: brown;
+}
+.r1c1
+{
+    display: inline-block;
+    width: 50%;
+    height: 100px;
+    background-color: black;
+    opacity: .5;
+    padding-left: 12px;
+    padding-top: 25px;
+    color: white;
+}
+.r1c2
+{
+    display: inline-block;
+    width: 50%;
+    height: 100px;
+    background-color: black;
+    opacity: .5;
+    padding-top: 43px;
+    color: white;
+    padding-right: 12px;
+    float: right;
+}
+.navbar
+{
+    float: right;
+    font-size: 20px;
+}
+.navbar li
+{
+    display: inline-block;
+    list-style: none;
+}
+.mr1c1, .mr1c2, .mr1c3, .mr2c1, .mr2c2, .mr2c3, .mr3c1, .mr3c2, .mr3c3
+{
+    display: inline-block;
+    width: 32.99%;
+    height: 200px;
+    background-color: burlywood;
+    border: 2px solid black;
+    margin-top: 4px;
+    transition: 3s;
+    transition-delay: 3s;
+    animation-name: myanimation;
+    animation-iteration-count: 1;
+    animation-duration: 4s;
+    animation-delay: 0s;
+}
+.mr1c1:hover
+{
+    transform: translate(100px,100px);
+}
+.mr1c2:hover
+{
+    transform: rotate(45deg);
+}
+.mr1c3:hover
+{
+    transform: rotate3d(1,1,1,360deg);
+}
+.mr2c1:hover
+{
+    transform: scale(0.5);
+}
+.mr2c2:hover
+{
+    transform: scale(1.2);
+}
+.mr3c1:hover
+{
+    border-radius: 50%;
+}
+.mr3c2:hover
+{
+    background-color: black;
+    opacity: .6;
+}
+@keyframes myanimation
+{
+    0%{background-color: cadetblue;}
+    50%{transform: rotate(90deg);}
+    55%{transform: rotate3d(2,3,4,-180deg);}
+    100%{transform: translate(100px,100px);}
+}
