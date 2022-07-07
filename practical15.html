@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 15</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body
+        {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .flex-container-one
+        {
+            width: 100%;
+            height: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            border: 2px solid black;
+        }
+        .flex-container-one-item
+        {
+            border: 2px solid black;
+            margin-top: 2px;
+            margin-bottom: 2px;
+            margin-right: 4px;
+            padding: 2px;
+            transition: 3s;
+            color: white;
+            background-color: brown;
+        }
+        .flex-container-one-item:hover
+        {
+            transform: scale(1.09);
+        }
+        .flex-container-two
+        {
+            width: 100%;
+            height: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            border: 2px solid black;
+            margin-top: 4px;
+        }
+        .flex-container-two-item
+        {
+            border: 2px solid black;
+            margin-top: 2px;
+            margin-bottom: 2px;
+            margin-right: 4px;
+            padding: 2px;
+            transition: 3s;
+            color: white;
+            background-color: brown;
+        }
+        .flex-container-two-item:hover
+        {
+            transform: scale(1.09);
+        }
+        .flex-container-three
+        {
+            width: 100%;
+            height: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            border: 2px solid black;
+            margin-top: 4px;
+        }
+        .flex-container-three-item
+        {
+            border: 2px solid black;
+            margin-top: 2px;
+            margin-bottom: 2px;
+            margin-right: 4px;
+            padding: 2px;
+            transition: 3s;
+            color: white;
+            background-color: brown;
+        }
+        .flex-container-three-item:hover
+        {
+            transform: scale(1.09);
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container-one">
+        <div class="flex-container-one-item">Name</div>
+        <div class="flex-container-one-item">Roll Number</div>
+        <div class="flex-container-one-item">Branch</div>
+        <div class="flex-container-one-item">Class</div>
+    </div>
+    <div class="flex-container-two">
+        <div class="flex-container-two-item">414</div>
+        <div class="flex-container-two-item">Vatsal Solanki</div>
+        <div class="flex-container-two-item">I.T</div>
+        <div class="flex-container-two-item">5 D</div>
+    </div>
+    <div class="flex-container-three">
+        <div class="flex-container-three-item">Anil Solanki</div>
+        <div class="flex-container-three-item">420</div>
+        <div class="flex-container-three-item">C.E</div>
+        <div class="flex-container-three-item">4 D</div>
+    </div>
+</body>
+</html>
