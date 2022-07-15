@@ -5,8 +5,129 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practical 16</title>
+    <style>
+        .container
+        {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            height: 500px;
+            border: 2px solid black;
+        }
+        .item
+        {
+            height: 100px;
+            width: 100px;
+            transition: 3s;
+        }
+        #item1
+        {
+            background-color: brown;
+        }
+        #item2
+        {
+            background-color: cadetblue;
+            align-self: center;
+            margin-left: -100px;
+        }
+        #item3
+        {
+            background-color: cornflowerblue;
+            align-self: flex-end;
+            margin-left: -100px;
+        }
+        #item4
+        {
+            background-color: crimson;
+            margin-left: 500px;
+            margin-top: 100px;
+        }
+        #item5
+        {
+            background-color: darkred;
+            align-self: flex-end;
+            margin-left: 100px;
+        }
+        #item6
+        {
+            background-color: blueviolet;
+        }
+        #item7
+        {
+            background-color: darkmagenta;
+            margin-top: 150px;
+        }
+        #item1:hover
+        {
+            transform: translate(200px,100px) rotate(360deg);
+        }
+        #item2:hover
+        {
+            transform: translate(100px,100px) rotate3d(1,1,1,90deg);
+        }
+        #item3:hover
+        {
+            transform: rotate(360deg);
+        }
+        #item4:hover
+        {
+            transform: translate(100px,100px) skew(90deg);
+        }
+        #item5:hover
+        {
+            transform: rotateY(180deg);
+        }
+        #item6:hover
+        {
+            transform: rotateZ(360deg);
+        }
+        #item7:hover
+        {
+            transform: scale(1.09);
+        }
+        #v,#a,#t,#s,#a,#l
+        {
+            display: inline-block;
+            transition: 3s;
+        }
+        #v:hover,#a:hover,#t:hover,#s:hover,#l:hover
+        {
+            transform: rotateY(360deg) scale(1.09);
+            border-bottom: 2px solid black;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-top: 2px solid white;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+        .container-two
+        {
+            background-color: brown;
+            color: white;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="item" id="item1"></div>
+        <div class="item" id="item2"></div>
+        <div class="item" id="item3"></div>
+        <div class="item" id="item4"></div>
+        <div class="item" id="item5"></div>
+        <div class="item" id="item6"></div>
+        <div class="item" id="item7"></div>
+    </div>
+
+    <div class="container-two">
+        <h1 id="v">V</h1>
+        <h1 id="a">A</h1>
+        <h1 id="t">T</h1>
+        <h1 id="s">S</h1>
+        <h1 id="a">A</h1>
+        <h1 id="l">L</h1>
+    </div>
 </body>
 </html>
