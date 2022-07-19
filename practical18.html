@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Practical 18</title>
+    <style>
+        .square
+        {
+            border: 2px solid black;
+            background-color: brown;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <button id="buttonOne">left</button><br>
+    <div class="square"></div>
+    <script>
+        $(document).ready(function(){
+            $("#buttonOne").each(function(index){$("#buttonOne").click(function(){
+                $("body").append('<button id="buttonTwo">right</button>');
+                $(".square").css("margin-left","500px");
+                $("#buttonOne").css("display","none");
+                $("#buttonTwo").click(function(){
+                    $("body").append('<button id="buttonThree">bottom</button>');
+                    $(".square").css("margin-left","100px");
+                    $("#buttonTwo").css("display","none");
+                    $("#buttonThree").click(function(){
+                        $("body").append('<button id="buttonFour">top</button>');
+                        $(".square").css("margin-top","100px");
+                        $("#buttonThree").css("display","none");
+                        $("#buttonFour").click(function(){
+                            $(".square").css("margin-top","50px");
+                            $("#buttonFour").css("display","none");
+                            $("#buttonOne").css("display","block");
+                        });
+                    });
+                });
+            });
+        });
+    });
+    </script>
+</body>
+</html>
